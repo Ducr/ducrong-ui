@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Ducrong UI', // 设置网站标题
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? '/ducrong-ui/' : '/', // 设置生产环境站点根路径
   description: 'UI 组件库', // 描述
   dest: './dist', // 设置输出目录
   port: 1000, // 端口
