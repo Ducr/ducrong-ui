@@ -9,6 +9,7 @@
     "docs:dev": "vuepress dev docs",
     "lint": "eslint --ext .js --ext .jsx --ext .vue packages/",
     "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .vue packages/",
+    "deploy": "sh build/deploy.sh",
     "release": "sh build/release.sh",
     "create": "node build/create.js",
     "docs:build": "vuepress build docs",
