@@ -1,0 +1,41 @@
+{
+  "name": "ducrong-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ducrong@126.com",
+  "description": "一个基于element-ui二次封装的UI组件库，使用vuepress构建组件文档",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "lint": "eslint --ext .js --ext .jsx --ext .vue packages/",
+    "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .vue packages/",
+    "release": "sh build/release.sh",
+    "create": "node build/create.js",
+    "docs:build": "vuepress build docs",
+    "build": "npm run docs:build",
+    "build:components": "cd ./packages && npm run build",
+    "dev": "npm run docs:dev"
+  },
+  "dependencies": {
+    "element-ui": "^2.3.7",
+    "highlight.js": "^9.12.0",
+    "less-loader": "^4.1.0",
+    "vue": "^2.5.16",
+    "vue-highlight.js": "^2.2.0",
+    "vuepress": "^1.8.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "chalk": "^4.1.1",
+    "eslint": "^7.28.0",
+    "eslint-plugin-vue": "^7.11.1",
+    "less": "^3.0.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "vuepress-plugin-demo-container": "^0.2.0"
+  }
+}
