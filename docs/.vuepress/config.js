@@ -35,6 +35,7 @@ module.exports = {
           title: '组件',
           collapsable: false,
           children: [
+            'element/timePickerPro',
             'element/dateTimePickerPro',
           ]
         },
