@@ -1,6 +1,7 @@
-import DateTimePickerPro from './DateTimePickerPro/index';
+import { TimePickerPro, DateTimePickerPro } from './DateTimePickerPro/index';
 
 const components = [
+  TimePickerPro,
   DateTimePickerPro,
 ];
 
@@ -14,5 +15,6 @@ const install = function (Vue, options = {}) {
 
 export default {
   install,
+  TimePickerPro,
   DateTimePickerPro,
 };
